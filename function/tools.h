@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int power(int x, int level) {
     int n = 0, output = 1;
@@ -22,3 +23,27 @@ int is_prime(int n) {
     } else
         return 0;
 }
+
+void output_array(int *array, int size) {
+
+    for (int i = 0; i < size; i++) {
+        printf("%d ",array[i]);
+    }
+    printf("\n");
+}
+
+int *input_array(int *num) {
+    int i, n;
+    printf("Введите количество элементов: ");
+    scanf("%d", &n);
+    int *array = malloc(n * sizeof(int));
+    for (i = 0; i < n; i++) {
+        printf("a[%d] = ",i);
+        scanf("%d", &array[i]);
+    }
+    *num = n;
+    output_array(array, n);
+    return array;
+}
+
+
