@@ -1,6 +1,5 @@
-#include "labs/lab_3/1-20.h"
+#include "labs/lab_4/1-2.h"
 int main(){
-//    printf("%d",task_6());
-    task_20();
+    task_1f();
     return 0;
 }
